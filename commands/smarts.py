@@ -44,7 +44,6 @@ class Smarts(commands.Cog):
     @commands.command(name='whatsapp', help='envia uma mensagem no whatsapp')
     async def send_whatsapp_message(self, ctx, receiver, *message):
         lu_num = config('LU_NUMBER')
-        ma_num = config('MA_NUMBER')
         if receiver in [
                 'Lucas', 'lucas', 'Lu', 'lu'
         ]:
